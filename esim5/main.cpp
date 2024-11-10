@@ -1,6 +1,7 @@
 #include "person.h"
 
 #include <iostream>
+#include <memory>
 
 using namespace std;
 
@@ -28,6 +29,15 @@ int main()
     objPerson2->personInfo();
     delete objPerson2;
     objPerson2=nullptr;
+
+    //luodaan olio smart-pointterin avulla
+    //tällainen olio luodaan kekoon ja se
+    //tuhoutuu automaattisesti
+
+    unique_ptr<Person> objPerson3=make_unique<Person>();
+    objPerson3->setName("Liisa Virta");
+    objPerson3->setAge(22);
+    objPerson3->personInfo();
 
 
     return 0;
