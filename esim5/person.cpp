@@ -37,3 +37,4 @@ Person::~Person()
 {
     cout<<"Person olio tuhottiin"<<endl;
 }
+
