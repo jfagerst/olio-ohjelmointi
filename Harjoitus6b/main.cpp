@@ -1,4 +1,4 @@
-#include "firstclass.h"
+#include "exampleclass.h"
 
 #include <QCoreApplication>
 
@@ -6,8 +6,7 @@ int main(int argc, char *argv[])
 {
     QCoreApplication a(argc, argv);
 
-    FirstClass *objFirst=new FirstClass;
-    delete objFirst;
-    objFirst=nullptr;
+    ExampleClass objExampl;
+    objExampl.startToWait();
     return a.exec();
 }

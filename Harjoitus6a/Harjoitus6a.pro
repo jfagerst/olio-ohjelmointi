@@ -1,11 +1,11 @@
 TEMPLATE = app
 CONFIG += console c++17
 CONFIG -= app_bundle
-CONFIG -= qt
+QT = core
 
 SOURCES += \
-        cat.cpp \
-        main.cpp
+        main.cpp \
+        myclass.cpp
 
 HEADERS += \
-    cat.h
+    myclass.h
